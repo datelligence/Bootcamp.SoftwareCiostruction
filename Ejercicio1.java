@@ -52,8 +52,38 @@ public class Ejercicio1 {
             }
             System.out.println();
         }
+        rombo(height);
     }
     // / Imprimir Triangulo //
     //
     // Imprimir Rombo //
+    
+    public static void rombo(int height) {
+    
+        System.out.println();
+
+        int row, espacio = 0;
+        int col = 0;
+
+        for(row = 1; row <= height; row++) {
+            for(espacio = (height - row); espacio >= 1; espacio--) {
+                System.out.print(" ");
+            }
+            for(col = 1; col <= (2 * row)-1; col++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        
+        for(row = 1; row <= height; row++) {
+            for(espacio = (height - row); espacio >= 1; espacio--) {
+                System.out.print("*");
+            }
+            for(col = 1; col <= (2 * row)-1; col++) {
+                System.out.print(" ");
+            }
+            System.out.println();
+        }
+    }
+
 }
